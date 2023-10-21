@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-body{
+
+body {
   width: 100%;
   margin: 0% !important;
   padding: 0% !important;
 }
+
 .bg {
-width: 100% !important;
-background-image: url("./images/hero.png");
-background-repeat: no-repeat;
-background-size: 100% ;
-height: 400px;
-margin: 0% !important;
-padding: 0% !important;
+  width: 100% !important;
+  background-image: url("./images/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100% !important;
+  margin: 0% !important;
+  padding: 0% !important;
 }
-h1{
+
+h1 {
   margin: 0px;
   padding: 0px;
   color: white;
@@ -21,87 +24,1038 @@ h1{
   font-weight: 500;
   font-size: 16px;
 }
+
 .flex-container {
   display: flex;
-  justify-content: space-around; /* Adjust this as needed */
+  justify-content: space-around;
+  /* Adjust this as needed */
   align-items: center;
 }
+
 .flex-item {
   display: flex;
-  flex-direction: column; /* Stack the img and h1 vertically */
-  text-align: center; /* Center text horizontally */
-  padding: 10px; /* Add padding as needed */
+  flex-direction: column;
+  /* Stack the img and h1 vertically */
+  text-align: center;
+  /* Center text horizontally */
+  padding: 10px;
+  /* Add padding as needed */
 }
+
 .navbar-content {
   display: flex;
-  justify-content: space-between; /* Adjust as needed (e.g., center, space-around) */
-  align-items: center; /* Align the title vertically in the middle */
-  flex: 1; /* Allow the content to take up all available space within the navbar */
+  justify-content: space-between;
+  /* Adjust as needed (e.g., center, space-around) */
+  align-items: center;
+  /* Align the title vertically in the middle */
+  flex: 1;
+  /* Allow the content to take up all available space within the navbar */
 }
+
 /* Your CSS file */
 
 
 
 .navbar-content {
   display: flex;
-  align-items: center; /* Vertically align items in the center */
-  gap: 4px; /* Add a 4px gap between the image and title */
+  align-items: center;
+  /* Vertically align items in the center */
+  gap: 4px;
+  /* Add a 4px gap between the image and title */
 }
 
 .navbar-image {
-  max-width: 50px; /* Set the maximum width for the image as needed */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 50px;
+  /* Set the maximum width for the image as needed */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 .navbar-title {
-  color: white; /* Set the text color to white */
+  color: white;
+  /* Set the text color to white */
   /* Additional text styles as needed */
 }
 
 
-.parent{
-    display:flex;
-   flex-Wrap:wrap;
-    justify-Content:center;
-     align-Items:center;
-     text-Align:center;
-    padding-top:3px;
-      gap:50px;
-}
-.Conects{
-  width:105px;
-   height:30px;
-    text-align:center;
-     padding:2px;
-      margin-left:20px;
-       margin-top:10px;
-        border: 1px solid #F8F9FA;
-        border-radius: 50px;
+.parent {
+  display: flex;
+  flex-Wrap: wrap;
+  justify-Content: center;
+  align-Items: center;
+  text-Align: center;
+  padding-top: 3px;
+  gap: 130px;
+  /* margin-right:60px; */
+
 }
 
-@media only screen and (max-width: 1300px){
-  .parent{
-      gap:10px;
+.Conects {
+  width: 105px;
+  height: 30px;
+  text-align: center;
+  padding: 2px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border: 1px solid #F8F9FA;
+  border-radius: 50px;
 }
+
+.Dream-home {
+  text-align: center;
+  margin-top: 22.5rem;
+  padding-bottom: 80px;
 }
-@media only screen and (max-width: 1000px){
-  .parent{
-      gap:0px;
+
+.Dream-home h2 {
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  line-height: 0px;
+  color: white;
 }
-h1{
-  margin: 0px;
-  padding: 0px;
+
+.Dream-home button {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 10px;
+  color: white;
+  background: none;
+  border-radius: 50px;
+  padding: 17px;
+  border: 1px solid #F8F9FA;
+  margin-top: 40px;
+}
+
+.navbar navbar-expand-lg navbar-light bg-light {
+  background-color: none !important;
+}
+
+.container-fluid {
+  background-color: none !important;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.about {
+  display: flex;
+  margin-Left: 60px;
+}
+
+.datah1 {
+  font-size: 32px;
+  text-align: center;
+  padding: 20px;
+  color: #454545;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+.datah3 {
+  font-size: 45px;
+  text-align: center;
+  padding: 20px;
+  color: #000000;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+.datah2 {
+  font-size: 24px;
+  text-align: center;
+  color: #454545;
+  width: 100%;
+}
+
+.datacontainer {
+  font-size: 18px;
+  max-width: 100%;
+  text-align: center;
+  /* margin-left: 12rem; */
+}
+
+.dataparent {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-Items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* padding-right: 20px; */
+  gap: 30px;
+}
+
+.dataparent1 {
+  max-width: 50%;
+}
+
+.dataparent2 {
+  max-width: 50%;
+}
+
+.parent-Section1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.child1 {
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.child2 {
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-sectione3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  max-width: 100%;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.Section2-parent {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  gap: 60px;
+  padding: 20px;
+}
+
+.Section2-child1 {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  
+}
+
+.Section2-child2 {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+ 
+}
+
+.s2-background-image-1 {
+  background-image: url('./images/bayerimg.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+.s2-background-image-2 {
+  background-image: url('./images/sallerimg.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 600px;
+}
+
+.text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  font-size: 45px;
+  font-weight: 100;
+  color: white;
+  padding-bottom: 0px;
+}
+
+.text1 {
+  position: absolute;
+
+}
+
+.MIKE-KOEN {
+  max-width: 100%;
+  text-align: center;
+  padding: 50px;
+}
+
+.MIKE-KOEN-heading {
+  font-size: 85px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #98002E;
+  
+}
+
+.MIKE-KOEN-heading1 {
+  font-size: 45px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  color: #98002E;
+  
+}
+
+.MIKE-KOEN-text {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #454545;
+}
+
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: wrap;
+  gap: 140px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.Cards2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 54px;
+  padding-bottom: 40px;
+  margin: auto;
+  text-align: center;
+  margin: 0%;
+}
+
+.Cards1 {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-wrap: wrap;
+  gap: 80px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+
+.redblackbg {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+
+}
+
+.redbg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+    linear-gradient(97.3deg, #7A0025 0%, #AE002A 100%);
+  height: 350px;
+  width: 600px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blackbg {
+  width: 600px;
+  height: 350px;
+  background: linear-gradient(97.3deg, #231F20 0%, #3C3C3C 100%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Conects1 {
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  padding: px;
+  border: 1px solid #F8F9FA;
+  border-radius: 50px;
+  margin-left: 120px;
+  text-align: center;
+  padding-top: 9px;
+  margin-top: 15px;
+
+}
+.Conects2 {
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  padding: px;
+  border: 1px solid #F8F9FA;
+  border-radius: 50px;
+  margin-left: 150px;
+  text-align: center;
+  padding-top: 9px;
+  margin-top: 15px;
+
+}
+
+.stay-connected {
+  width: 1200px;
+  height: 300px;
+  background: linear-gradient(96.32deg, #810027 6.78%, #AD002A 100.01%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.classname-header {
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-size: 46px;
 }
+
+.classname-text {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 200;
 }
-@media only screen and (max-width: 1000px){
- 
-h1{
- 
-  font-weight: 300;
-  font-size: 12px;
+
+.form-control {
+  width: 400px;
+  border-radius: 30px;
 }
+
+.font-fam a {
+  text-decoration: none;
+  color: #454545;
+}
+
+.foot-others {
+  max-width: 45%;
+}
+
+.foot-background {
+  height: 266px;
+  margin: auto;
+  justify-content: center;
+  gap: 200px;
+  background-color: #F2F2F2;
+}
+
+.foot-textarea {
+  max-width: 30%;
+}
+
+.foot-social {
+  gap: 40px;
+}
+
+.pt-2 img {
+  cursor: pointer;
+}
+/* .video-img{
+  max-width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+     align-items: center;
+     padding: 30px;
+} */
+.video-img{
+  max-width: 100%;
+ display: flex;
+ justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  padding: auto;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1300px) {
+  .parent {
+    gap: 0px;
+  }
+
+  .Dream-home {
+
+    margin-top: 20rem;
+
+  }
+
+  .Dream-home h2 {
+    font-size: 50px;
+
+  }
+
+  .about {
+    display: "flex";
+    margin-Left: 20px;
+  }
+
+  .Conects {
+
+    margin-left: 0px;
+    margin-top: 0px;
+
+  }
+  .video-img{
+    max-width: 90%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: auto;
+    margin: auto;
+  }
+
+}
+
+@media only screen and (max-width: 1130px) {
+  .parent {
+    gap: 0px;
+  }
+
+  .Dream-home {
+
+    margin-top: 14rem;
+
+  }
+
+  .Dream-home h2 {
+    font-size: 45px;
+
+  }
+
+  .Conects {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .parent {
+    gap: 0px;
+  }
+
+  .Dream-home {
+    margin-top: 10rem;
+    line-height: 0px;
+  }
+
+  .Dream-home h2 {
+
+    font-size: 35px;
+  }
+
+  .about {
+    display: "flex";
+    margin-Left: 0px;
+  }
+
+  h1 {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .Conects {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .Dream-home button {
+    margin-top: 10px;
+  }
+  .datah2 {
+    font-size: 24px;
+    text-align: center;
+    color: #454545;
+    width: 300px;
+  }
+  .card-text1{
+    font-size: 14px;
+    text-align: center;
+    color: #454545;
+    width: 300px !important;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .parent {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .Dream-home h2 {
+    font-size: 35px;
+  }
+
+  .Dream-home {
+    margin-top: 9rem;
+  }
+
+
+  h1 {
+
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  .Dream-home button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 7px;
+    background: none;
+    border-radius: 50px;
+    padding: 8px;
+    border: 1px solid #F8F9FA;
+    margin-top: 10px;
+  }
+
+  .parent-sectione3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 35px;
+    max-width: 100%;
+  }
+
+  .parent-sectione3-1 {
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .parent-sectione3-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 460px;
+  }
+  .datah2 {
+    font-size: 24px;
+    text-align: center;
+    color: #454545;
+    width: 230px;
+  }
+  .card-text1{
+    font-size: 14px;
+    text-align: center;
+    color: #454545;
+    width: 230px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .parent {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .Dream-home h2 {
+    font-size: 20px;
+  }
+
+  .Dream-home {
+    margin-top: 5rem;
+  }
+
+
+  h1 {
+
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  .Dream-home button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 7px;
+    background: none;
+    border-radius: 50px;
+    padding: 8px;
+    border: 1px solid #F8F9FA;
+    margin-top: 10px;
+  }
+
+  .dataparent1 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .dataparent1-1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .dataparent2 {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .child1-1 {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .child2-1 {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .datah1 {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    color: #454545;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+  .Section2-child1 {
+    width: 450px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    
+  }
+  
+  .Section2-child2 {
+    width: 450px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+   
+  }
+  .datah3 {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+  }
+  .rounded{
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+  }
+  .MIKE-KOEN {
+    max-width: 100%;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .MIKE-KOEN-heading {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #98002E;
+    
+  }
+  
+  .MIKE-KOEN-heading1 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #98002E;
+    
+  }
+  
+  .MIKE-KOEN-text {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #454545;
+  }
+  .redblackbg {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  
+  }
+  
+  .redbg {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+      linear-gradient(97.3deg, #7A0025 0%, #AE002A 100%);
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .blackbg {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(97.3deg, #231F20 0%, #3C3C3C 100%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-title{
+    font-size: 20px !important;
+  }
+  .card-text1{
+    font-size: 10px !important;
+    width: 18rem !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: auto !important;
+    margin-left: auto !important;
+  }
+  .card-text{
+    font-size: 10px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: auto !important;
+    margin-left: auto !important;
+  }
+  .classname-header {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+  
+  .classname-text {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .Conects1 {
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #F8F9FA;
+    border-radius: 50px;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 9px;
+    margin-top: 15px;
+  
+  }
+  .Conects2 {
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    padding: px;
+    border: 1px solid #F8F9FA;
+    border-radius: 50px;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 9px;
+    margin-top: 15px;
+  
+  }
+  .imagevideo{
+    width: 450px;
+  }
+  .imagedownvideo{
+    width: 450px;
+  }
+  .foot-textarea{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .parent {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  .card-text1{
+    font-size: 10px !important;
+    width: 18rem !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: auto !important;
+    margin-left: auto !important;
+  }
+  .card-text{
+    font-size: 10px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: auto !important;
+    margin-left: auto !important;
+  }
+  /* .card-textimp2{
+    font-size: 10px !important;
+    width: 18rem !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: auto !important;
+    margin-left: auto !important;
+  } */
+
+
+  .Dream-home h2 {
+    font-size: 15px;
+  }
+
+  .Dream-home {
+    margin-top: 2rem;
+  }
+  .parent-sectione3-1 {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .parent-sectione3-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+  }
+  .Section2-child1 {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    
+  }
+  
+  .Section2-child2 {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+   
+  }
+  .datah3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+  }
+  .mb-3{
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    gap: 0px;
+  }
+  .imagevideo{
+    width: 300px;
+  }
+  .imagedownvideo{
+    width: 300px;
+  }
 }

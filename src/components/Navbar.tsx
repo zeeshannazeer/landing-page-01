@@ -14,6 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, imageUrl, className }) => {
   return (
     <nav className={`navbar ${className}`} style={navbarStyle}>
       <div className="navbar-content">
+        
         <h1 className="navbar-title">{title}</h1>
         <img src={imageUrl} alt={title} className="navbar-image" />
       </div>
