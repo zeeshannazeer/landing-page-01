@@ -62,7 +62,7 @@ const App: React.FC = () => {
 
   return (
     < >
-
+<div style={{overflowX:'hidden'}}>
       <div className="bg">
         <div className="parent"   style={{ position: "sticky", top: "0" ,backgroundColor:'black'}}>
           <div>
@@ -466,7 +466,7 @@ const App: React.FC = () => {
         </div> 
 
      <FooterMenus footMenus={footMenus} /> 
-
+     </div>
     </>
   );
 };
