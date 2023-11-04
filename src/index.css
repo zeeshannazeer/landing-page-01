@@ -785,6 +785,13 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+  .Dream-home h2 {
+    font-size: 35px;
+  }
+
+  .Dream-home {
+    margin-top: 9rem;
+  }
   .Finaincing{
     display: flex;
     flex-wrap: wrap;
@@ -805,7 +812,7 @@ h1 {
   }
 
   .Dream-home {
-    margin-top: 5rem;
+    margin-top: 9rem;
   }
 
 
@@ -1073,11 +1080,15 @@ h1 {
     line-height: 0px;
     color: white;
   }
-  
+  .parent {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
   .parent {
     display: flex;
     justify-content: space-between;
