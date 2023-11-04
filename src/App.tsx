@@ -4,7 +4,7 @@ import Section from './components/Section';
 import Section1 from './components/Section1';
 import Section2 from './components/Section2';
 import FooterMenus, { FooterMenuData } from './components/FooterMenus';
-
+import  { useState } from 'react';
 const App: React.FC = () => {
   const data = [
     {
@@ -59,7 +59,11 @@ const App: React.FC = () => {
   const underlineStyle = {
     textDecoration: 'underline',
   };
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     < >
 <div style={{overflowX:'hidden'}}>
@@ -68,36 +72,29 @@ const App: React.FC = () => {
           <div>
             <img src="/abbas.png" alt=""  />
           </div>
-          <nav className="navbar navbar-expand-md navbar-light " style={{ display: "flex", flexWrap: 'wrap' }} >
-            <div className="container-fluid">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <div style={{ display: "flex" }}>
-                      <a className="nav-link active" aria-current="page" href="#" style={{ color: 'white' }}>Buyer</a>
-                      <img src="/Icon1.png" alt="" style={{ width:'30px',height:'30px ',marginTop:'6px'}} />
-                    </div>
-                  </li>
-                  <li className="nav-item">
-                    <div style={{ display: "flex" }}>
-                      <a className="nav-link active" aria-current="page" href="#" style={{ color: 'white' }}>Seller</a>
-                      <img src="/Icon1.png" alt="" style={{ width:'30px',height:'30px ',marginTop:'6px'}} />
-                    </div>
-                  </li>
-                  <li className="nav-item">
-                    <div style={{ display: "flex" }}>
-                      <a className="nav-link" href="#" style={{ color: 'white' }}>Investors</a>
-                      <img src="/Icon1.png" alt=""  style={{ width:'30px',height:'30px ',marginTop:'6px'}}/>
-                    </div>
-                  </li>
-                  <li className="nav-item">
-                    <div style={{ display: "flex" }}>
-                      <a className="nav-link" href="#" style={{ color: 'white' }}>Property Management</a>
-                      <img src="/Icon1.png" alt="" style={{ width:'30px',height:'30px ',marginTop:'6px'}} />
-                      <svg width="31" height="23" viewBox="0 0 31 23" fill="none" style={{ marginTop: '10px', marginLeft: '20px' }} xmlns="http://www.w3.org/2000/svg">
+          <nav className={`navbar navbar-expand-md navbar-light ${menuOpen ? 'active' : ''}`}>
+      <div className="container-fluid">
+        <button className="navbar-toggler" type="button" onClick={toggleMenu}>
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item" style={{ color: 'white',display:'flex', }}>
+              <a className="nav-link active" aria-current="page" href="#" style={{ color: 'white' }}>Buyer</a>
+              <img src="/Icon1.png" alt="" style={{ width: '30px', height: '30px', marginTop: '6px' }} />
+            </li>
+            <li className="nav-item" style={{ color: 'white',display:'flex', }}>
+              <a className="nav-link active" aria-current="page" href="#" style={{ color: 'white' }}>Seller</a>
+              <img src="/Icon1.png" alt="" style={{ width: '30px', height: '30px', marginTop: '6px' }} />
+            </li>
+            <li className="nav-item" style={{ color: 'white',display:'flex', }}>
+              <a className="nav-link" href="#" style={{ color: 'white' }}>Investors</a>
+              <img src="/Icon1.png" alt="" style={{ width: '30px', height: '30px', marginTop: '6px' }} />
+            </li>
+            <li className="nav-item" style={{ color: 'white',display:'flex', }}>
+              <a className="nav-link" href="#" style={{ color: 'white' }}>Property Management</a>
+              <img src="/Icon1.png" alt="" style={{ width: '30px', height: '30px', marginTop: '6px' }} />
+                     <svg width="31" height="23" viewBox="0 0 31 23" fill="none" style={{ marginTop: '10px', marginLeft: '20px' }} xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_208_584)">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7072 13.6365C17.7884 13.5552 17.8849 13.4906 17.9912 13.4466C18.0974 13.4025 18.2112 13.3799 18.3262 13.3799C18.4412 13.3799 18.5551 13.4025 18.6613 13.4466C18.7675 13.4906 18.864 13.5552 18.9453 13.6365L22.314 17.0053C22.4782 17.1693 22.5705 17.3919 22.5706 17.624C22.5707 17.8561 22.4785 18.0788 22.3145 18.2429C22.1504 18.4071 21.9278 18.4994 21.6957 18.4995C21.4636 18.4996 21.241 18.4075 21.0768 18.2434L17.708 14.8746C17.6267 14.7934 17.5621 14.6969 17.5181 14.5906C17.4741 14.4844 17.4514 14.3706 17.4514 14.2556C17.4514 14.1406 17.4741 14.0267 17.5181 13.9205C17.5621 13.8143 17.6267 13.7178 17.708 13.6365H17.7072Z" fill="white" />
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2578 15C14.8898 15 15.5156 14.8755 16.0995 14.6337C16.6834 14.3918 17.2139 14.0373 17.6608 13.5905C18.1076 13.1436 18.4621 12.613 18.704 12.0292C18.9458 11.4453 19.0703 10.8195 19.0703 10.1875C19.0703 9.55551 18.9458 8.92972 18.704 8.34584C18.4621 7.76196 18.1076 7.23143 17.6608 6.78455C17.2139 6.33767 16.6834 5.98318 16.0995 5.74133C15.5156 5.49948 14.8898 5.375 14.2578 5.375C12.9815 5.375 11.7574 5.88203 10.8549 6.78455C9.95234 7.68707 9.44531 8.91115 9.44531 10.1875C9.44531 11.4639 9.95234 12.6879 10.8549 13.5905C11.7574 14.493 12.9815 15 14.2578 15ZM19.9453 10.1875C19.9453 11.6959 19.3461 13.1426 18.2795 14.2092C17.2129 15.2758 15.7662 15.875 14.2578 15.875C12.7494 15.875 11.3028 15.2758 10.2361 14.2092C9.16953 13.1426 8.57031 11.6959 8.57031 10.1875C8.57031 8.67908 9.16953 7.23244 10.2361 6.16583C11.3028 5.09922 12.7494 4.5 14.2578 4.5C15.7662 4.5 17.2129 5.09922 18.2795 6.16583C19.3461 7.23244 19.9453 8.67908 19.9453 10.1875Z" fill="white" />
@@ -108,30 +105,28 @@ const App: React.FC = () => {
                           </clipPath>
                         </defs>
                       </svg>
-                    </div>
-                  </li>
 
-                  <li className="nav-item">
-                    <div className='about' >
-                      <a className="nav-link" href="#" style={{ color: 'white' }}>About</a>
-                      <img src="/Icon1.png" alt=""  style={{ width:'30px',height:'30px ',marginTop:'6px'}}/>
-                    </div>
-                  </li>
-                  <li className="nav-item">
-                    <div style={{ display: "flex", marginLeft: '10px' }}>
-                      <a className="nav-link" href="#" style={{ color: 'white' }}>Agents</a>
-                    </div>
-                  </li>
-                </ul>
-                <form className="d-flex">
-                  <div className='Conects'>
-                    <h1> contacts </h1>
-                  </div>
-
-                </form>
+            </li>
+            <li className="nav-item">
+              <div className='about'>
+                <a className="nav-link" href="#" style={{ color: 'white' }}>About</a>
+                <img src="/Icon1.png" alt="" style={{ width: '30px', height: '30px', marginTop: '6px' }} />
               </div>
+            </li>
+            <li className="nav-item">
+              <div style={{ display: "flex", marginLeft: '10px' }}>
+                <a className="nav-link" href="#" style={{ color: 'white' }}>Agents</a>
+              </div>
+            </li>
+          </ul>
+          <form className="d-flex">
+            <div className='Conects'>
+              <h1> contacts </h1>
             </div>
-          </nav>
+          </form>
+        </div>
+      </div>
+    </nav>
         </div>
 
 

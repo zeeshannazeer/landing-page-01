@@ -565,6 +565,53 @@ h1 {
 }
 
 @media only screen and (max-width: 1130px) {
+
+  /* YourNavbar.css */
+
+/* Add a background color to the navbar */
+.navbar {
+  background-color: #333; /* Change to your desired background color */
+}
+
+/* Style the hamburger icon */
+.navbar-toggler-icon {
+  color: white; /* Change to your desired icon color */
+}
+
+/* Style the navigation links */
+.nav-link {
+  color: white; /* Change to your desired link text color */
+}
+
+/* Style the active link */
+.nav-link.active {
+  font-weight: bold; /* Change to your desired active link style */
+}
+
+/* Style the collapsed menu when the hamburger is clicked */
+.navbar.active {
+  background-color: #333; /* Change to your desired background color */
+}
+
+/* Style the expanded menu */
+.collapse.show {
+  background-color: #333; /* Change to your desired background color */
+}
+
+/* Style the navigation items within the menu */
+.navbar-nav {
+  margin-right: auto;
+}
+
+/* Style the images within the navigation items */
+.navbar-nav img {
+  width: 30px; /* Change to your desired image width */
+  height: 30px; /* Change to your desired image height */
+  margin-top: 6px; /* Adjust as needed */
+}
+
+/* Add additional styling for other elements as needed */
+
   .parent {
     gap: 0px;
   }
