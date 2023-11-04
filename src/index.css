@@ -703,17 +703,7 @@ h1 {
     color: #454545;
     width: 300px !important;
   }
-  .video-img{
-    max-width: 100%;
-   display: flex;
-   justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    padding: auto;
-    margin: auto;
-    height: 600px !important;
-  }
+
 }
 
 
@@ -795,18 +785,6 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
-
-  .video-img{
-    max-width: 100%;
-   display: flex;
-   justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    padding: auto;
-    margin: auto;
-    height: 600px !important;
-  }
   .Finaincing{
     display: flex;
     flex-wrap: wrap;
@@ -1100,17 +1078,6 @@ h1 {
 }
 
 @media only screen and (max-width: 450px) {
-  .video-img{
-    max-width: 100%;
-   display: flex;
-   justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    padding: auto;
-    margin: auto;
-    height: 1200px !important;
-  }
   .parent {
     display: flex;
     justify-content: space-between;
