@@ -990,6 +990,24 @@ h1 {
   .foot-textarea{
     display: none;
   }
+  .card-textimp{
+    font-size: 14px !important;
+  }
+  .Dream-home {
+    text-align: center;
+    margin-top: 22.5rem;
+    padding-bottom: 80px;
+  }
+  
+  .Dream-home h2 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 0px;
+    color: white;
+  }
+  
+
 }
 
 @media only screen and (max-width: 450px) {
