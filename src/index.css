@@ -224,7 +224,7 @@ h1 {
 }
 
 .child1 {
-  max-width: 50%;
+  max-width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -523,6 +523,10 @@ h1 {
   padding: auto;
   margin: auto;
 }
+.Finaincing{
+  display: flex;
+  flex-wrap: nowrap;
+}
 
 @media only screen and (max-width: 1300px) {
   .parent {
@@ -570,7 +574,7 @@ h1 {
 
 /* Add a background color to the navbar */
 .navbar {
-  background-color: #333; /* Change to your desired background color */
+  /* background-color: #333; Change to your desired background color */
 }
 
 /* Style the hamburger icon */
@@ -590,12 +594,12 @@ h1 {
 
 /* Style the collapsed menu when the hamburger is clicked */
 .navbar.active {
-  background-color: #333; /* Change to your desired background color */
+  /* background-color: #333; Change to your desired background color */
 }
 
 /* Style the expanded menu */
 .collapse.show {
-  background-color: #333; /* Change to your desired background color */
+  /* background-color: #333; Change to your desired background color */
 }
 
 /* Style the navigation items within the menu */
@@ -631,14 +635,26 @@ h1 {
     margin-left: 0px;
     margin-top: 0px;
   }
+ 
+
 
 }
-.Finaincing{
-  display: flex;
-  flex-wrap: nowrap;
-}
+
+
+
+
 
 @media only screen and (max-width: 1000px) {
+
+  .child1-1 {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0% !important;
+    margin: 0% !important;
+  }
   .parent {
     gap: 0px;
   }
@@ -686,6 +702,17 @@ h1 {
     text-align: center;
     color: #454545;
     width: 300px !important;
+  }
+  .video-img{
+    max-width: 100%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: auto;
+    margin: auto;
+    height: 600px !important;
   }
 }
 
@@ -768,6 +795,18 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .video-img{
+    max-width: 100%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: auto;
+    margin: auto;
+    height: 600px !important;
+  }
   .Finaincing{
     display: flex;
     flex-wrap: wrap;
@@ -1061,6 +1100,17 @@ h1 {
 }
 
 @media only screen and (max-width: 450px) {
+  .video-img{
+    max-width: 100%;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: auto;
+    margin: auto;
+    height: 1200px !important;
+  }
   .parent {
     display: flex;
     justify-content: space-between;
