@@ -265,11 +265,11 @@ const App: React.FC = () => {
 
           <div className="">
             <h5 className="card-title" style={{
-              fontSize: '22px', color: '#98002E', maxWidth: '32rem',
-              fontFamily: 'Poppins, sans-serif', paddingBottom: '4px'
+              fontSize: '38px', color: '#98002E', maxWidth: '32rem',
+              fontFamily: 'Poppins, sans-serif', paddingBottom: '15px'
             }}>Licensed Builder</h5>
              <p className="card-textimp" style={{
-              fontSize: '14px', maxWidth: '30rem',
+              fontSize: '25px', maxWidth: '30rem',
               fontFamily: 'Poppins, sans-serif', paddingBottom: '4px'
             }}>25+ Years Experience</p>
             <p className="card-text1" style={{
@@ -294,11 +294,11 @@ const App: React.FC = () => {
 
           <div className="">
             <h5 className="card-title" style={{
-              fontSize: '22px', color: '#98002E', maxWidth: '32rem',
-              fontFamily: 'Poppins, sans-serif', paddingBottom: '4px'
+              fontSize: '38px', color: '#98002E', maxWidth: '32rem',
+              fontFamily: 'Poppins, sans-serif', paddingBottom: '15px'
             }}>Federal Building Inspector</h5>
             <p className="card-textimp" style={{
-              fontSize: '14px', maxWidth: '30rem',
+              fontSize: '25px', maxWidth: '30rem',
               fontFamily: 'Poppins, sans-serif', paddingBottom: '4px'
             }}>10+ Years Experience</p>
             <p className="card-text1" style={{
@@ -403,18 +403,18 @@ const App: React.FC = () => {
 
         </div>
         <div className="Cards-gap" style={{ width: '14rem', textAlign: 'center' }}>
-          <img src="x3.png" className="card-img-top" alt="..." />
+          <img src="x4.png" className="card-img-top" alt="..." />
           <div className="">
             <h5 className="card-title" style={{
               fontSize: '22px', color: '#98002E',
               fontFamily: 'Poppins, sans-serif', paddingTop: '10px'
             }}>Blog Post Title</h5>
-             <h5 className="card-title" style={{
-              fontSize: '10px', color:'#454545',fontWeight:'300',
+          <h5 className="card-title" style={{
+              fontSize: '10px',color:'#454545',fontWeight:'300', 
               fontFamily: 'Poppins, sans-serif', paddingTop: '10px'
             }}>june 11 2023</h5>
             <p className="card-text" style={{
-              fontSize: '10px', width: '16rem', marginLeft: '-15px',
+              fontSize: '14px', width: '16rem', marginLeft: '-15px',
               fontFamily: 'Poppins, sans-serif', paddingTop: '5px'
             }}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
