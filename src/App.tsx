@@ -61,12 +61,12 @@ const App: React.FC = () => {
   };
 
   return (
-    <>
+    < >
 
       <div className="bg">
-        <div className="parent">
+        <div className="parent"   style={{ position: "sticky", top: "0" ,backgroundColor:'black'}}>
           <div>
-            <img src="/abbas.png" alt="" />
+            <img src="/abbas.png" alt=""  />
           </div>
           <nav className="navbar navbar-expand-md navbar-light " style={{ display: "flex", flexWrap: 'wrap' }} >
             <div className="container-fluid">
@@ -78,25 +78,25 @@ const App: React.FC = () => {
                   <li className="nav-item">
                     <div style={{ display: "flex" }}>
                       <a className="nav-link active" aria-current="page" href="#" style={{ color: 'white' }}>Buyer</a>
-                      <img src="/Icon1.png" alt="" />
+                      <img src="/Icon1.png" alt="" style={{ width:'30px',height:'30px ',marginTop:'6px'}} />
                     </div>
                   </li>
                   <li className="nav-item">
                     <div style={{ display: "flex" }}>
                       <a className="nav-link active" aria-current="page" href="#" style={{ color: 'white' }}>Seller</a>
-                      <img src="/Icon1.png" alt="" />
+                      <img src="/Icon1.png" alt="" style={{ width:'30px',height:'30px ',marginTop:'6px'}} />
                     </div>
                   </li>
                   <li className="nav-item">
                     <div style={{ display: "flex" }}>
                       <a className="nav-link" href="#" style={{ color: 'white' }}>Investors</a>
-                      <img src="/Icon1.png" alt="" />
+                      <img src="/Icon1.png" alt=""  style={{ width:'30px',height:'30px ',marginTop:'6px'}}/>
                     </div>
                   </li>
                   <li className="nav-item">
                     <div style={{ display: "flex" }}>
                       <a className="nav-link" href="#" style={{ color: 'white' }}>Property Management</a>
-                      <img src="/Icon1.png" alt="" />
+                      <img src="/Icon1.png" alt="" style={{ width:'30px',height:'30px ',marginTop:'6px'}} />
                       <svg width="31" height="23" viewBox="0 0 31 23" fill="none" style={{ marginTop: '10px', marginLeft: '20px' }} xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_208_584)">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7072 13.6365C17.7884 13.5552 17.8849 13.4906 17.9912 13.4466C18.0974 13.4025 18.2112 13.3799 18.3262 13.3799C18.4412 13.3799 18.5551 13.4025 18.6613 13.4466C18.7675 13.4906 18.864 13.5552 18.9453 13.6365L22.314 17.0053C22.4782 17.1693 22.5705 17.3919 22.5706 17.624C22.5707 17.8561 22.4785 18.0788 22.3145 18.2429C22.1504 18.4071 21.9278 18.4994 21.6957 18.4995C21.4636 18.4996 21.241 18.4075 21.0768 18.2434L17.708 14.8746C17.6267 14.7934 17.5621 14.6969 17.5181 14.5906C17.4741 14.4844 17.4514 14.3706 17.4514 14.2556C17.4514 14.1406 17.4741 14.0267 17.5181 13.9205C17.5621 13.8143 17.6267 13.7178 17.708 13.6365H17.7072Z" fill="white" />
@@ -114,7 +114,7 @@ const App: React.FC = () => {
                   <li className="nav-item">
                     <div className='about' >
                       <a className="nav-link" href="#" style={{ color: 'white' }}>About</a>
-                      <img src="/Icon1.png" alt="" />
+                      <img src="/Icon1.png" alt=""  style={{ width:'30px',height:'30px ',marginTop:'6px'}}/>
                     </div>
                   </li>
                   <li className="nav-item">
@@ -135,14 +135,17 @@ const App: React.FC = () => {
         </div>
 
 
+           <div> 
+
         <div className='Dream-home'>
           <h2 >Find Your Dream Home</h2>
           <button > Get started </button>
         </div>
-
+        </div>
       </div>
+      
 
-      <div style={{maxWidth:'100%' ,display:'flex',justifyContent:'center', alignItems:'center'}} >
+      <div className='fixingGap' style={{maxWidth:'100%' ,display:'flex',justifyContent:'center', alignItems:'center',paddingTop:'70px',paddingBottom:'70px'}} >
         {data.map((item, index) => (
           <Section key={index} h1={item.h1} content={item.content} Image={item.Image} />
         ))}
@@ -163,17 +166,18 @@ const App: React.FC = () => {
 
       <div className="row justify-content-center" style={{ maxWidth: '100%',margin:'auto' }}>
         <div className="col-sm-6">
-          <div className="card d-flex justify-content-center flex-wrap gap-20" style={{ border: 'none' ,flexWrap:'wrap' }}>
-            <div className="card-body" style={{ padding: '40px', gap: '5%',flexWrap:'wrap'  }} >
-              <div>
-                <h5 className="datah2">Financing & Mortgage Options. </h5>
-                <p className="card-text1" style={{ fontSize: '13px', textAlign: 'center', width: '100%' }} >Every family is unique when it comes to financing. Let us help guide you through the lending process and find the best rate.</p> </div>
-              <div >
-                <button type="button" className="btn btn-danger" style={{ borderRadius: '20px', width: '100px' }}>Chat Now</button></div>
+         
+            <div className="Finaincing" style={{  maxWidth:'100%', padding: '30px', gap: '5%',display:'flex',  justifyContent:'center',alignContent:'center', }} >
+              <div  style={{  width:'700px', textAlign:'center' }}>
+                <h5 className='datah2' style={{ width:'650px', fontSize:'30px',fontWeight:'300', textAlign:'center',padding:'10px' }} >Financing & Mortgage Options. </h5>
+                <p className="card-text1" style={{ width:'650px', fontSize: '17px', textAlign: 'center',  }} >Every family is unique when it comes to financing. Let us help guide you through the lending process and find the best rate.</p> </div>
+              <div style={{  maxWidth:'30%' }} >
+                <button type="button" className="btn btn-danger" style={{ borderRadius: '20px', width: '120px', marginTop:"40px"  ,backgroundColor:'#98002E'}}>Chat Now</button></div>
+
             </div>
           </div>
         </div>
-      </div>
+    
 
       <div>
         <Section2 />

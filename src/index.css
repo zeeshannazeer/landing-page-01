@@ -4,6 +4,7 @@ body {
   width: 100%;
   margin: 0% !important;
   padding: 0% !important;
+  font-family: 'Poppins', sans-serif;
 }
 
 .bg {
@@ -86,6 +87,7 @@ h1 {
   text-Align: center;
   padding-top: 3px;
   gap: 130px;
+  position: sticky;
   /* margin-right:60px; */
 
 }
@@ -146,37 +148,44 @@ h1 {
 }
 
 .datah1 {
-  font-size: 32px;
+  font-size: 34px;
   text-align: center;
   padding: 20px;
-  color: #454545;
+  color: #454545; 
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .datah3 {
-  font-size: 45px;
-  text-align: center;
-  padding: 20px;
+  font-size: 55px;
+  padding: 60px;
   color: #000000;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .datah2 {
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
-  color: #454545;
+  color: #454545; 
   width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 .datacontainer {
-  font-size: 18px;
-  max-width: 100%;
+  font-size: 17px;
+  max-width: 80%;
   text-align: center;
-  /* margin-left: 12rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dataparent {
@@ -189,15 +198,17 @@ h1 {
   align-items: center;
   padding: 20px;
   /* padding-right: 20px; */
-  gap: 30px;
+  gap: 40px;
 }
 
 .dataparent1 {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .dataparent2 {
-  max-width: 50%;
+  max-width: 37%;
+  text-align: center;
+ 
 }
 
 .parent-Section1 {
@@ -362,11 +373,11 @@ h1 {
 }
 
 .Cards1 {
-  max-width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 80px;
   padding-bottom: 40px;
   margin: auto;
@@ -572,6 +583,10 @@ flex-wrap: wrap;
   }
 
 }
+.Finaincing{
+  display: flex;
+  flex-wrap: nowrap;
+}
 
 @media only screen and (max-width: 1000px) {
   .parent {
@@ -626,6 +641,10 @@ flex-wrap: wrap;
 
 
 @media only screen and (max-width: 768px) {
+
+
+
+  
   .parent {
     display: flex;
     justify-content: space-between;
@@ -699,6 +718,15 @@ flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 600px) {
+  .Finaincing{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fixingGap{
+  padding-top: 0px !important;
+  padding-bottom: 10px !important;
+  }
+  
   .parent {
     display: flex;
     justify-content: space-between;
@@ -780,6 +808,16 @@ flex-wrap: wrap;
     padding: 20px;
     color: #454545;
     width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+
+  .datah2 {
+    font-size: 18px !important;
+    text-align: center;
+    padding: 20px;
+    color: #454545;
+    width: 80%;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
   }
